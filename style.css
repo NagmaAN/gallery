@@ -1,0 +1,54 @@
+body{
+    background-color: #242629;
+}
+h3{
+  color: white;
+}
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+#gallery-container img {
+  width: 100%;
+  height: auto;
+}
+
+.img-container{
+    position: relative;
+}
+
+.title{
+position: absolute;
+  bottom: 0;
+  left: 0;
+color: #fff;
+  padding: 10px;
+  }
+.text, .about{
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+}
+
+ @media screen and (max-width: 480px) {
+   #gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+footer{
+color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;    
+} 
+
+div{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
